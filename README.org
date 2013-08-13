@@ -1,0 +1,13 @@
+* girtest
+This is a pretty dumb dumper for gobject introspection(GIR) data.  I
+wrote it because I wanted to use GIR in two different projects, but
+each time I was baffled by the documentation.
+
+I found this weird, since I've used several introspection systems, and
+havent had any particular issues with those.
+
+So, girtest is only meant to be used to understand GIR. As such, it
+was written mostly by Emacs macrology on the GIR docs.
+
+** building
+gcc `pkg-config --cflags --libs  gobject-introspection-1.0` girtest.c 
